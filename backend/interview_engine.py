@@ -101,6 +101,7 @@ def _build_openai_messages(state: SessionState) -> list:
         resume_text=state.resume_text,
         current_phase=state.phase.value,
         question_count=state.question_count,
+        phase_question_count=state.phase_question_count,
     )
     messages = [{"role": "system", "content": system_content}]
     for msg in state.messages:
