@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://backend-34s234k5i-bhumit-goyals-projects.vercel.app";
 
 export async function startSession(resumeFile, jobDescription) {
   const formData = new FormData();
